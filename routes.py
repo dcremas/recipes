@@ -35,8 +35,7 @@ def logout():
 @app.route('/')
 @app.route('/home')
 def home():
-    image_file = url_for('static', filename='disappointed.jpg')
-    return render_template('home.html', image_file=image_file)
+    return render_template('home.html')
 
 
 @app.route('/signup', methods=["GET", "POST"])
