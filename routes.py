@@ -38,7 +38,7 @@ def home():
     return render_template('home.html')
 
 
-@app.route('/signup', methods=["GET", "POST"])
+@app.route('/create_account', methods=["GET", "POST"])
 def create_account():
     if current_user.is_authenticated:
         return redirect(url_for('home'))
